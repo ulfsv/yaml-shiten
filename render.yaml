@@ -3,9 +3,6 @@ services:
 - type: web
   name: webdis
   env: docker
-  repo: https://github.com/render-examples/webdis.git # optional
-  plan: standard              # optional
-  branch: master              # optional (uses repo default)
   healthCheckPath: /
   envVars:
   - key: REDIS_HOST
