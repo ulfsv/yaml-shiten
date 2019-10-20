@@ -4,19 +4,7 @@ services:
   name: webdis
   env: docker
   healthCheckPath: /
-  envVars:
-  - key: REDIS_HOST
-    fromService:
-      name: redis
-      type: pserv
-      property: host          # available properties are listed below
-  - key: REDIS_PORT
-    fromService:
-      name: redis
-      type: pserv
-      property: port
-  - fromGroup: conc-settings
-
+ 
 envVarGroups:
 - name: conc-settings
   envVars:
