@@ -1,2 +1,0 @@
-# yaml-shiten
-render crap
